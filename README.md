@@ -56,7 +56,8 @@ Table 2: Environmental variables measured in this intership.
 |Level of water table      |    Level of water table (maximum)        | 
 |      |   Level of water table (mininum)         | 
 |  Address  |   Number of addresses         | 
-* : Binominal variables.  
+
+*: Binominal variables.  
 
 The scripts wrote when developing the solution were included in the files in this project.
 
