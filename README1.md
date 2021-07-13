@@ -19,7 +19,7 @@ Table 1: Intrinsic and operational environmental variable measured in this inter
 |Operational variables (at the level of per pipe)      | Old afsluiter (if the afsluiter is older than the average age)*          | 
 |      | Number of overgang          | 
 
-*: Different kinds of materials (e.g., whether the pipe is a AC or CU) and old afsluisters were put into the model as binomial variables.
+*: Different kinds of materials (e.g., whether the pipe is made of AC or CU) and old afsluisters were put into the model as binomial variables.
 
 Table 2: Environmental variables measured in this intership.
 | Categories        | Environmental variables (at the level of per pipe)          | 
