@@ -41,18 +41,6 @@ leidingen_df = pd.DataFrame.spatial.from_featureclass(leidingen_item)
 leidingen_df.head(5)
 waterleidingen_others = r'C:\Internship_work\Model\model_input.gdb\waterleidingen_new_1'
 
- 
-
-
-# In[10]:
-
-
-#tree = arcpy.stats.Forest("TRAIN", leidingen_item, "Problem", "CATEGORICAL","VALUE_MAX_IMPUTED false;address_num false;Year_afsluiters false;loam_new true;ONEHOT_weg_functi_others true", 
-#   None, None, None, None, None, None, None, None, None, None, "TRUE", 10, 10, 10, 100, 10, 0, None, None, "TRUE", 5, "FALSE")
-
-#feature_name = leidingen_df.columns
-#feature_name
-
 
 # In[11]:
 
@@ -143,70 +131,12 @@ best_solution = bayesian_optimization(dataset, function, parameters)
  
 best_solution
  
- 
-
-
-# In[ ]:
-
-
-
-
 
 # In[ ]:
 
 
 arcpy.stats.Forest("PREDICT_FEATURES", leidingen_item, "Problem", "CATEGORICAL", "VALUE_MAX_IMPUTED false;address_num false;Year_afsluiters false;loam_new true;ONEHOT_weg_functi_others true", None, None, waterleidingen_others, r"C:\Internship_work\Model\model_output.gdb\Prediction_pro_notebook_test1", None, "VALUE_MAX_IMPUTED VALUE_MAX_IMPUTED;address_num address_num;Year_afsluiters Year;loam_new loam_new;ONEHOT_weg_functi_others 'others (weg_functi_One-hot)'", None, None, None, None, "TRUE", 457, 2, 29, 100, None, 10, None, None, "FALSE", 1, "FALSE")
 
-
-# In[ ]:
-
-
-#find importance of variables starting with the first variable as initial variable 
-#i = 7 
-
-        return cross_val_score(rf,  
-               X=x_train, 
-               y=y_train, 
-               cv=cv,
-               scoring=oob_error(rf),
-               n_jobs=-1).mean()
-     
-#sub_name_list = []
- 
-#for feature_name in feature_names[i:60]:
-#    sub_name_list.append(feature_name)
-    
-#subset = leidingen_df[leidingen_df.columns[i:60]]
-#print(len(feature_names))
-#subset.drop(columns='leeftij_r')
- 
-
-#for c in range(i, 60):
-#    feature = subset[subset.columns[7:i+1]]
-#    print(feature_set)
-#    print(feature.shape)
-#    i = i+1
-#    train_features, test_features, train_labels, test_labels = train_test_split(feature, label, test_size = 0.20, random_state = 42)
-#    print('Training Features Shape:', train_features.shape)
-#    print('Training Labels Shape:', train_labels.shape)
-#    print('Testing Features Shape:', test_features.shape)
-#    print('Testing Labels Shape:', test_labels.shape)
-    
-    # Instantiate model with 1000 decision trees
-#    rf = RandomForestRegressor(n_estimators = 1000, random_state = 42)
-    # Train the model on training data
-#    rf.fit(train_features, train_labels, sample_weight=None)
-    
-    # Get numerical feature importances
-#    importances = list(rf.feature_importances_)
-    # List of tuples with variable and importance
-#    predictions = rf.predict(test_features)
-#    f1  =  f1_score(test_labels, predictions.round(), average='micro')
-#    feature_f1 = [(feature, round(f1, 2)) for feature, f1 in zip(sub_name_list, f1)]
-#    print(f'Variable: {feature.columns.values} f1: {f1}')  
-
-
-# In[ ]:
 
 
 @Misc{,
