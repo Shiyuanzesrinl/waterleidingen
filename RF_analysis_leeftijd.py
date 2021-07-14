@@ -91,10 +91,6 @@ print(np.shape(x),  np.shape(y))
 print(type_of_target(x),  type_of_target(y))    
 
 
-# In[11]:
-
-
-
 from bayes_opt import BayesianOptimization
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import cross_val_score
@@ -147,49 +143,6 @@ best_solution
  
 
 
-# In[7]:
-
-
-#find importance of variables starting with the first variable as initial variable 
-#i = 7 
-
-#sub_name_list = []
- 
-#for feature_name in feature_names[i:60]:
-#    sub_name_list.append(feature_name)
-    
-#subset = leidingen_df[leidingen_df.columns[i:60]]
-#print(len(feature_names))
-#subset.drop(columns='leeftij_r')
- 
-
-#for c in range(i, 60):
-#    feature = subset[subset.columns[7:i+1]]
-#    print(feature_set)
-#    print(feature.shape)
-#    i = i+1
-#    train_features, test_features, train_labels, test_labels = train_test_split(feature, label, test_size = 0.20, random_state = 42)
-#    print('Training Features Shape:', train_features.shape)
-#    print('Training Labels Shape:', train_labels.shape)
-#    print('Testing Features Shape:', test_features.shape)
-#    print('Testing Labels Shape:', test_labels.shape)
-    
-    # Instantiate model with 1000 decision trees
-#    rf = RandomForestRegressor(n_estimators = 1000, random_state = 42)
-    # Train the model on training data
-#    rf.fit(train_features, train_labels, sample_weight=None)
-    
-    # Get numerical feature importances
-#    importances = list(rf.feature_importances_)
-    # List of tuples with variable and importance
-#    predictions = rf.predict(test_features)
-#    f1  =  f1_score(test_labels, predictions.round(), average='micro')
-#    feature_f1 = [(feature, round(f1, 2)) for feature, f1 in zip(sub_name_list, f1)]
-#    print(f'Variable: {feature.columns.values} f1: {f1}')  
-
-
-# In[ ]:
-
 
 @Misc{,
     author = {Fernando Nogueira},
@@ -198,8 +151,7 @@ best_solution
     url = " https://github.com/fmfn/BayesianOptimization"
 }
 
-
-# In[ ]:
+ 
 
 
 
