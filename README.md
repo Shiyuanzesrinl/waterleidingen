@@ -58,7 +58,7 @@ Table 2: Environmental variables measured in this intership.
 
 *: Binominal variables.  
 
-The scripts wrote when developing the solution were included in the files in this project, in which two scripts contains Baysian optimization function. Hereby the ciation of the Baysian optimziation:
+The scripts written when developing the solution were included in the files in this project, in which two scripts contains Baysian optimization function. Hereby the ciation of the Baysian optimziation:
 @Misc{,
     author = {Fernando Nogueira},
     title = {{Bayesian Optimization}: Open source constrained global optimization tool for {Python}},
