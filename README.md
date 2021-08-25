@@ -53,8 +53,7 @@ Table 2: Environmental variables measured in this intership.
 |      |   Dike and ining fleid*         | 
 | Slope     | Slope of water pipes  | 
 |      |    Whether the pipe sits in hilly area*     | 
-|Level of water table      |    Level of water table (maximum)        | 
-|      |   Level of water table (mininum)         | 
+|Sink area     |    water pipes located in areas where water likely to store        | 
 |  Address  |   Number of addresses         | 
 
 *: Binominal variables.  
