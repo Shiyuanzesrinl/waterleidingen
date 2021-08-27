@@ -21,7 +21,7 @@ Table 1: Intrinsic and operational environmental variable measured in this inter
 
 *: Different kinds of materials (e.g., whether the pipe is made of AC or CU, Fig. 1) and old afsluisters were put into the model as binomial variables.
 
-<img width="178" alt="Capture3" src="https://user-images.githubusercontent.com/87322555/125421313-51b6514f-86b9-41af-ac31-5e909dddf1b4.PNG">
+<img width="178" alt="Capture3" src="https://user-images.githubusercontent.com/87322555/131084393-b6429821-a0b6-484e-8a36-96530c708b37.PNG">
 
 Figure 1: Pipes made of different kind of materials
 
